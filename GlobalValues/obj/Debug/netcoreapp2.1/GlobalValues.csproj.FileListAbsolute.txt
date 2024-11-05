@@ -1,0 +1,14 @@
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.deps.json
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.runtimeconfig.json
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.runtimeconfig.dev.json
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.pdb
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\DataAccessLibrary.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\bin\Debug\netcoreapp2.1\DataAccessLibrary.pdb
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csprojAssemblyReference.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csproj.CoreCompileInputs.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.AssemblyInfoInputs.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.AssemblyInfo.cs
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csproj.CopyComplete
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.pdb

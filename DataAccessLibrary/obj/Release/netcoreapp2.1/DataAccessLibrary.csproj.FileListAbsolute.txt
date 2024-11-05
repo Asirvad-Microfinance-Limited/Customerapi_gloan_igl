@@ -1,0 +1,14 @@
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\DataAccessLibrary.deps.json
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\DataAccessLibrary.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\DataAccessLibrary.pdb
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\bin\Release\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.csprojAssemblyReference.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.csproj.CoreCompileInputs.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.AssemblyInfoInputs.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.AssemblyInfo.cs
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.csproj.CopyComplete
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\DataAccessLibrary\obj\Release\netcoreapp2.1\DataAccessLibrary.pdb

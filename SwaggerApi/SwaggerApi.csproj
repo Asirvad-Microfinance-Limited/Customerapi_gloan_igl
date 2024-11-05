@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerAPI\CustomerAPI.csproj" />
+    <ProjectReference Include="..\EmployeeAPI\EmployeeAPI.csproj" />
+    <ProjectReference Include="..\GeneralAPI\GeneralAPI.csproj" />
+    <ProjectReference Include="..\KYCAPI\KYCAPI.csproj" />
+    <ProjectReference Include="..\MobileAPI\MobileAPI.csproj" />
+    <ProjectReference Include="..\NEFTAPI\BankAPI.csproj" />
+    <ProjectReference Include="..\PANAPI\PANAPI.csproj" />
+    <ProjectReference Include="..\PhotoAPI\PhotoAPI.csproj" />
+  </ItemGroup>
+
+</Project>

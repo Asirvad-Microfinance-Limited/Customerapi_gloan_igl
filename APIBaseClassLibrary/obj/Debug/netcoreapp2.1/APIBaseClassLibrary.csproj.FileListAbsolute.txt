@@ -1,0 +1,14 @@
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\APIBaseClassLibrary.deps.json
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\APIBaseClassLibrary.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\APIBaseClassLibrary.pdb
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\DataAccessLibrary.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\GlobalValues.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\DataAccessLibrary.pdb
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\bin\Debug\netcoreapp2.1\GlobalValues.pdb
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.csprojAssemblyReference.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.csproj.CoreCompileInputs.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.AssemblyInfoInputs.cache
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.AssemblyInfo.cs
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.csproj.CopyComplete
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.dll
+E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Debug\netcoreapp2.1\APIBaseClassLibrary.pdb

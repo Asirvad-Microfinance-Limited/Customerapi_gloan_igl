@@ -1,0 +1,161 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneralAPI", "GeneralAPI\GeneralAPI.csproj", "{9A0DF09A-6DE8-4E77-B453-D0233261651A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{433AC67B-3F05-413D-B604-17BB59282677}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerAPI", "CustomerAPI\CustomerAPI.csproj", "{B28A81CC-342F-4830-B517-D849D42AA206}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAPI", "NEFTAPI\BankAPI.csproj", "{186A8A19-FC93-45C4-AEB8-94E94AB24DC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYCAPI", "KYCAPI\KYCAPI.csproj", "{0AE57570-FFBD-4E16-B3F7-CCDF34AB03F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoAPI", "PhotoAPI\PhotoAPI.csproj", "{49FD3021-DA9B-430E-A955-E40CB74B4CBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PANAPI", "PANAPI\PANAPI.csproj", "{F63BBEB5-68A6-4581-A890-006257C3C3D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileAPI", "MobileAPI\MobileAPI.csproj", "{E6BD75F2-F994-40B5-BA22-65E61992809E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicAPIGateway", "PublicAPIGateway\PublicAPIGateway.csproj", "{AAE5A24B-A257-47C4-B502-C398B67A823C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalValues", "GlobalValues\GlobalValues.csproj", "{7C638217-B1E5-4CC6-B3CD-AFCFC0B28A87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeAPI", "EmployeeAPI\EmployeeAPI.csproj", "{9CB98943-DE8F-412A-9CD4-DA70CE22C9DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIBaseClassLibrary", "APIBaseClassLibrary\APIBaseClassLibrary.csproj", "{61ACD11E-FC77-4490-958B-005980C4E396}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerAPI", "SwaggerAPI\SwaggerAPI.csproj", "{BF6D1952-4BE3-4A35-86CF-16EB51B0D8B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGenerator", "..\PasswordGenerator\PasswordGenerator.csproj", "{42982E40-E4B6-4C39-A141-ED5B0A557761}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PasswordGeneratorExe", "PasswordGeneratorExe\PasswordGeneratorExe.vdproj", "{DB815AA8-D760-4D76-B0F3-C897CABB1558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilitiesNew", "Utilities\UtilitiesNew.csproj", "{F49B245C-4768-46D3-8CE7-CD33BAF3977A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A0DF09A-6DE8-4E77-B453-D0233261651A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0DF09A-6DE8-4E77-B453-D0233261651A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0DF09A-6DE8-4E77-B453-D0233261651A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0DF09A-6DE8-4E77-B453-D0233261651A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433AC67B-3F05-413D-B604-17BB59282677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433AC67B-3F05-413D-B604-17BB59282677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433AC67B-3F05-413D-B604-17BB59282677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433AC67B-3F05-413D-B604-17BB59282677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28A81CC-342F-4830-B517-D849D42AA206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28A81CC-342F-4830-B517-D849D42AA206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28A81CC-342F-4830-B517-D849D42AA206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28A81CC-342F-4830-B517-D849D42AA206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186A8A19-FC93-45C4-AEB8-94E94AB24DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186A8A19-FC93-45C4-AEB8-94E94AB24DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186A8A19-FC93-45C4-AEB8-94E94AB24DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186A8A19-FC93-45C4-AEB8-94E94AB24DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE57570-FFBD-4E16-B3F7-CCDF34AB03F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE57570-FFBD-4E16-B3F7-CCDF34AB03F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE57570-FFBD-4E16-B3F7-CCDF34AB03F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE57570-FFBD-4E16-B3F7-CCDF34AB03F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FD3021-DA9B-430E-A955-E40CB74B4CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FD3021-DA9B-430E-A955-E40CB74B4CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FD3021-DA9B-430E-A955-E40CB74B4CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FD3021-DA9B-430E-A955-E40CB74B4CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63BBEB5-68A6-4581-A890-006257C3C3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63BBEB5-68A6-4581-A890-006257C3C3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63BBEB5-68A6-4581-A890-006257C3C3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63BBEB5-68A6-4581-A890-006257C3C3D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BD75F2-F994-40B5-BA22-65E61992809E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BD75F2-F994-40B5-BA22-65E61992809E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BD75F2-F994-40B5-BA22-65E61992809E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BD75F2-F994-40B5-BA22-65E61992809E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE5A24B-A257-47C4-B502-C398B67A823C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE5A24B-A257-47C4-B502-C398B67A823C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE5A24B-A257-47C4-B502-C398B67A823C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE5A24B-A257-47C4-B502-C398B67A823C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C638217-B1E5-4CC6-B3CD-AFCFC0B28A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C638217-B1E5-4CC6-B3CD-AFCFC0B28A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C638217-B1E5-4CC6-B3CD-AFCFC0B28A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C638217-B1E5-4CC6-B3CD-AFCFC0B28A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB98943-DE8F-412A-9CD4-DA70CE22C9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB98943-DE8F-412A-9CD4-DA70CE22C9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB98943-DE8F-412A-9CD4-DA70CE22C9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB98943-DE8F-412A-9CD4-DA70CE22C9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ACD11E-FC77-4490-958B-005980C4E396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ACD11E-FC77-4490-958B-005980C4E396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ACD11E-FC77-4490-958B-005980C4E396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ACD11E-FC77-4490-958B-005980C4E396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6D1952-4BE3-4A35-86CF-16EB51B0D8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6D1952-4BE3-4A35-86CF-16EB51B0D8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6D1952-4BE3-4A35-86CF-16EB51B0D8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6D1952-4BE3-4A35-86CF-16EB51B0D8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42982E40-E4B6-4C39-A141-ED5B0A557761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42982E40-E4B6-4C39-A141-ED5B0A557761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42982E40-E4B6-4C39-A141-ED5B0A557761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42982E40-E4B6-4C39-A141-ED5B0A557761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB815AA8-D760-4D76-B0F3-C897CABB1558}.Debug|Any CPU.ActiveCfg = Debug
+		{DB815AA8-D760-4D76-B0F3-C897CABB1558}.Release|Any CPU.ActiveCfg = Release
+		{F49B245C-4768-46D3-8CE7-CD33BAF3977A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49B245C-4768-46D3-8CE7-CD33BAF3977A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49B245C-4768-46D3-8CE7-CD33BAF3977A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49B245C-4768-46D3-8CE7-CD33BAF3977A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E2C8E1E-3F2E-4857-BB40-20127F5879CB}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.193.200.12:8080/tfs/mactech
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = APIBaseClassLibrary\\APIBaseClassLibrary.csproj
+		SccProjectName1 = APIBaseClassLibrary
+		SccLocalPath1 = APIBaseClassLibrary
+		SccProjectUniqueName2 = CustomerAPI\\CustomerAPI.csproj
+		SccProjectName2 = CustomerAPI
+		SccLocalPath2 = CustomerAPI
+		SccProjectUniqueName3 = DataAccessLibrary\\DataAccessLibrary.csproj
+		SccProjectName3 = DataAccessLibrary
+		SccLocalPath3 = DataAccessLibrary
+		SccProjectUniqueName4 = EmployeeAPI\\EmployeeAPI.csproj
+		SccProjectName4 = EmployeeAPI
+		SccLocalPath4 = EmployeeAPI
+		SccProjectUniqueName5 = GeneralAPI\\GeneralAPI.csproj
+		SccProjectName5 = GeneralAPI
+		SccLocalPath5 = GeneralAPI
+		SccProjectUniqueName6 = GlobalValues\\GlobalValues.csproj
+		SccProjectName6 = GlobalValues
+		SccLocalPath6 = GlobalValues
+		SccProjectUniqueName7 = KYCAPI\\KYCAPI.csproj
+		SccProjectName7 = KYCAPI
+		SccLocalPath7 = KYCAPI
+		SccProjectUniqueName8 = MobileAPI\\MobileAPI.csproj
+		SccProjectName8 = MobileAPI
+		SccLocalPath8 = MobileAPI
+		SccProjectUniqueName9 = NEFTAPI\\BankAPI.csproj
+		SccProjectName9 = NEFTAPI
+		SccLocalPath9 = NEFTAPI
+		SccProjectUniqueName10 = PANAPI\\PANAPI.csproj
+		SccProjectName10 = PANAPI
+		SccLocalPath10 = PANAPI
+		SccProjectUniqueName11 = PhotoAPI\\PhotoAPI.csproj
+		SccProjectName11 = PhotoAPI
+		SccLocalPath11 = PhotoAPI
+		SccProjectUniqueName12 = PublicAPIGateway\\PublicAPIGateway.csproj
+		SccProjectName12 = PublicAPIGateway
+		SccLocalPath12 = PublicAPIGateway
+		SccProjectUniqueName13 = SwaggerAPI\\SwaggerAPI.csproj
+		SccProjectName13 = SwaggerAPI
+		SccLocalPath13 = SwaggerAPI
+		SccProjectUniqueName14 = Utilities\\UtilitiesNew.csproj
+		SccProjectName14 = Utilities
+		SccLocalPath14 = Utilities
+	EndGlobalSection
+EndGlobal
