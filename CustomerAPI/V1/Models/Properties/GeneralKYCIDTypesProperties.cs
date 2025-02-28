@@ -9,7 +9,7 @@ namespace CustomerAPI.V1.Models.Properties
     public class GeneralKYCIDTypesProperties
     {
         [JsonProperty("KYCIDType")]
-        public long identity_id { get; set; }
+        public decimal identity_id { get; set; }
         [JsonProperty("Name")]
         public string identity_name { get; set; }
     }
