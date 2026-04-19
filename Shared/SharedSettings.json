@@ -1,0 +1,31 @@
+﻿{
+  "ServiceUrlSettings": {
+    //"baseUrl": "https://mafiltest.mactech.net.in/asirvadgoldloan"
+   "baseUrl": "https://uatbackend.asirvad.com/asirvadgoldloan"
+      //"baseUrl": "https://appsbackend.asirvad.com/asirvadgoldloan"
+    // "baseUrl": "https://mafildev.mactech.net.in"
+  },
+
+
+  "ConnectionStrings": {
+     //"DbConnection": "data source=CLOUDX8M;persist security info=True;user id=aml_gloan;Enlist=false;password=",
+     //"Password": "ggbd1p92rKER/TXnSJdkfg==" //wsd#1234
+
+    //"DbConnection": "data source=PREPROD;persist security info=True;user id=aml_gloan1;Enlist=false;password=",
+    //"Password": "8rLdaQdhq0QR/TXnSJdkfg==" //ASD#1234
+
+
+    "DbConnection": "data source=CLOUDUAT;persist security info=True;user id=aml_igl;Enlist=false;password=",
+    "Password": "f5zrX05UuVsR/TXnSJdkfg==" //asd#1234
+
+    // "DbConnection": "data source=MAFIL;persist security info=True;user id=mana0809;Enlist=false;password=",
+    // "Password": "8rLdaQdhq0QR/TXnSJdkfg=="
+
+
+  },
+  "isLog": {
+
+    "status": 0
+  }
+
+}

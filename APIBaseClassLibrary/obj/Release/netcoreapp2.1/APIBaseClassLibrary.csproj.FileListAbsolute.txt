@@ -12,3 +12,17 @@ E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Release\netcoreapp
 E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.csproj.CopyComplete
 E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.dll
 E:\TFS\Asirvad_GL\CustomerAPISolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\APIBaseClassLibrary.deps.json
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\APIBaseClassLibrary.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\APIBaseClassLibrary.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\DataAccessLibrary.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\GlobalValues.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\DataAccessLibrary.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\bin\Release\netcoreapp2.1\GlobalValues.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.csprojAssemblyReference.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.csproj.CoreCompileInputs.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.AssemblyInfoInputs.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.AssemblyInfo.cs
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.csproj.CopyComplete
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\APIBaseClassLibrary\obj\Release\netcoreapp2.1\APIBaseClassLibrary.pdb

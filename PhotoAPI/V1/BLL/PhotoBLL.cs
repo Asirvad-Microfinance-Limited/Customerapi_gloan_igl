@@ -41,10 +41,10 @@ namespace PhotoAPI.V1.BLL
             try
             {
                 #region CUSTOMER PHOTO
-                ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + customerPhotoRequest.custId + "' and pledge_photo is not null");
+                ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + customerPhotoRequest.custId + "' and pledge_photo is not null");
                 if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) > 0)
                 {
-                    dt = helper.ExecuteDataSet("select pledge_photo from customer_photo where cust_id='" + customerPhotoRequest.custId + "' and pledge_photo is not null").Tables[0];
+                    dt = helper.ExecuteDataSet("select pledge_photo from aml_gloan.customer_photo where cust_id='" + customerPhotoRequest.custId + "' and pledge_photo is not null").Tables[0];
                     if (dt.Rows.Count > 0)
                     {
                         byte[] imagebyte = (byte[])dt.Rows[0][0];
@@ -85,7 +85,7 @@ namespace PhotoAPI.V1.BLL
                 #endregion
 
                 #region KYC PHOTO
-                ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + customerPhotoRequest.custId + "' and kyc_photo is not null");
+                ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + customerPhotoRequest.custId + "' and kyc_photo is not null");
                 if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) == 0)
                 {
                     ods = helper.ExecuteDataSet("select count(*) from aml_customer.TBL_CUSTOMER_IMAGES where cust_id='" + customerPhotoRequest.custId + "' and type_id in(2,3)");
@@ -116,7 +116,7 @@ namespace PhotoAPI.V1.BLL
                 #endregion
 
                 #region BANK PHOTO
-                ods = helper.ExecuteDataSet("select count(*) from CUSTOMER_bank_passbook where cust_id='" + customerPhotoRequest.custId + "'");
+                ods = helper.ExecuteDataSet("select count(*) from aml_gloan.CUSTOMER_bank_passbook where cust_id='" + customerPhotoRequest.custId + "'");
                 if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) == 0)
                 {
                     ods = helper.ExecuteDataSet("select count(*) from aml_customer.TBL_CUSTOMER_IMAGES where cust_id='" + customerPhotoRequest.custId + "' and type_id=4");
@@ -146,7 +146,7 @@ namespace PhotoAPI.V1.BLL
                 }
 
                 //--ckyc data insertion-----------added wef 22-sep-2022-- sreerekha
-                ods = helper.ExecuteDataSet("select count(*)  from  TBL_CUST_CKYC_DTL where cust_id='" + customerPhotoRequest.custId + "'");
+                ods = helper.ExecuteDataSet("select count(*)  from  aml_gloan.TBL_CUST_CKYC_DTL where cust_id='" + customerPhotoRequest.custId + "'");
                 if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) == 0)
                 {
                     dt = helper.ExecuteDataSet("select a.fat_hus  from customer a where cust_id='" + customerPhotoRequest.custId + "'").Tables[0]; ;
@@ -210,11 +210,11 @@ namespace PhotoAPI.V1.BLL
                 try
                 {
                     byte[] imageBytes = Convert.FromBase64String(addPhotoRequest.custPhoto);
-                    ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + addPhotoRequest.custId + "'");
+                    ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + addPhotoRequest.custId + "'");
                     if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) > 0)
                     {
-                        helper.ExecuteNonQuery("insert into customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
-                        string sql1 = "update customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into aml_gloan.customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from aml_gloan.customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
+                        string sql1 = "update aml_gloan.customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm1 = new OracleParameter[1];
                         parm1[0] = new OracleParameter();
                         parm1[0].ParameterName = "ph";
@@ -226,8 +226,8 @@ namespace PhotoAPI.V1.BLL
                     }
                     else
                     {
-                        helper.ExecuteNonQuery("insert into customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
-                        string sql = "update customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into aml_gloan.customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
+                        string sql = "update aml_gloan.customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm = new OracleParameter[1];
                         parm[0] = new OracleParameter();
                         parm[0].ParameterName = "ph";
@@ -268,11 +268,11 @@ namespace PhotoAPI.V1.BLL
                 try
                 {
                     byte[] imageBytes = Convert.FromBase64String(addPhotoRequest.custPhoto);
-                    ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + addPhotoRequest.custId + "'");
+                    ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + addPhotoRequest.custId + "'");
                     if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) > 0)
                     {
-                        helper.ExecuteNonQuery("insert into customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
-                        string sql1 = "update customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into aml_gloan.customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from aml_gloan.customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
+                        string sql1 = "update aml_gloan.customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm1 = new OracleParameter[1];
                         parm1[0] = new OracleParameter();
                         parm1[0].ParameterName = "ph";
@@ -284,8 +284,8 @@ namespace PhotoAPI.V1.BLL
                     }
                     else
                     {
-                        helper.ExecuteNonQuery("insert into customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
-                        string sql = "update customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into aml_gloan.customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
+                        string sql = "update aml_gloan.customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm = new OracleParameter[1];
                         parm[0] = new OracleParameter();
                         parm[0].ParameterName = "ph";
@@ -407,11 +407,11 @@ namespace PhotoAPI.V1.BLL
                 try
                 {
                     byte[] imageBytes = Convert.FromBase64String(addPhotoRequest.custPhoto);
-                    ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + addPhotoRequest.custId + "'");
+                    ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + addPhotoRequest.custId + "'");
                     if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) > 0)
                     {
-                        helper.ExecuteNonQuery("insert into  customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
-                        string sql1 = "update customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into  aml_gloan.customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from aml_gloan.customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
+                        string sql1 = "update aml_gloan.customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm1 = new OracleParameter[1];
                         parm1[0] = new OracleParameter();
                         parm1[0].ParameterName = "ph";
@@ -423,8 +423,8 @@ namespace PhotoAPI.V1.BLL
                     }
                     else
                     {
-                        helper.ExecuteNonQuery("insert into customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
-                        string sql = "update customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into aml_gloan.customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
+                        string sql = "update aml_gloan.customer_photo set pledge_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm = new OracleParameter[1];
                         parm[0] = new OracleParameter();
                         parm[0].ParameterName = "ph";
@@ -467,11 +467,11 @@ namespace PhotoAPI.V1.BLL
                     byte[] imageBytes = Convert.FromBase64String(addPhotoRequest.custPhoto);
                    // Image img = Base64ToImage(addPhotoRequest.custPhoto);
                     //byte[] imageBytes = ImageToByteArray(img);
-                    ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + addPhotoRequest.custId + "'");
+                    ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + addPhotoRequest.custId + "'");
                     if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) > 0)
                     {
-                        helper.ExecuteNonQuery("insert into  customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
-                        string sql1 = "update customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into  aml_gloan.customer_photo_his select t.cust_id,t.pledge_photo,t.kyc_photo,sysdate,t.kyc_adhar_status from aml_gloan.customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
+                        string sql1 = "update aml_gloan.customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm1 = new OracleParameter[1];
                         parm1[0] = new OracleParameter();
                         parm1[0].ParameterName = "ph";
@@ -483,8 +483,8 @@ namespace PhotoAPI.V1.BLL
                     }
                     else
                     {
-                        helper.ExecuteNonQuery("insert into customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
-                        string sql = "update customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
+                        helper.ExecuteNonQuery("insert into aml_gloan.customer_photo (cust_id) values ('" + addPhotoRequest.custId + "')");
+                        string sql = "update aml_gloan.customer_photo set kyc_photo=:ph where cust_id='" + addPhotoRequest.custId + "'";
                         OracleParameter[] parm = new OracleParameter[1];
                         parm[0] = new OracleParameter();
                         parm[0].ParameterName = "ph";
@@ -540,7 +540,7 @@ namespace PhotoAPI.V1.BLL
               //  DBAccessHelper helper = new DBAccessHelper();
                 if (!string.IsNullOrEmpty(addNewCustomerPhotoRequest.custPhoto))
                 {
-                    sql = "update customer_photo set pledge_photo=:ph where cust_id='" + addNewCustomerPhotoRequest.custId + "'";
+                    sql = "update aml_gloan.customer_photo set pledge_photo=:ph where cust_id='" + addNewCustomerPhotoRequest.custId + "'";
                     OracleParameter[] parm = new OracleParameter[1];
                     parm[0] = new OracleParameter();
                     parm[0].ParameterName = "ph";

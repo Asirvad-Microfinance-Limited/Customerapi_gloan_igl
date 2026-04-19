@@ -22,29 +22,29 @@ namespace APIBaseClassLibrary.V1
         {
             // string[] corsOrigin = { "http://localhost:21314", "http://localhost:4200", "https://mafildev.mactech.net.in", "https://mac.mactech.net.in", "https://qc.mactech.net.in", "https://mafiltest.mactech.net.in", "https://goldloan.manappuram.net", "https://goldservices.manappuram.net", "https://mahofin.macomsolutions.in", "https://demo.mactech.net.in" };
             string[] corsOrigin = { "http://localhost:21314", "http://localhost:4200", "https://mafildev.mactech.net.in","https://goldloan.manappuram.net", "https://goldservices.manappuram.net"};
-            // string[] methods = { "GET", "POST", "PUT", "DELETE"};
+            string[] methods = { "GET", "POST", "PUT", "DELETE" };
 
-            //services.AddSwaggerGen(options =>
-            //{
+            services.AddSwaggerGen(options =>
+            {
 
-            //    // swagger added for documentation
-            //    options.SwaggerDoc(apiVersion, new Info { Title = apiName, Version = apiVersion });
+                // swagger added for documentation
+                options.SwaggerDoc(apiVersion, new Info { Title = apiName, Version = apiVersion });
 
 
 
-            //    options.AddSecurityDefinition("Bearer", new ApiKeyScheme
-            //    {
-            //        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
-            //        Name = "Authorization",
-            //        In = "header",
-            //        Type = "apiKey"
-            //    });
-            //    options.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
-            //    {
-            //        { "Bearer", new string[] { } }
-            //    });
+                options.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                {
+                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                    Name = "Authorization",
+                    In = "header",
+                    Type = "apiKey"
+                });
+                options.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
+                {
+                    { "Bearer", new string[] { } }
+                });
 
-            //});
+            });
 
             services.AddCors(options =>
             {
@@ -89,12 +89,12 @@ namespace APIBaseClassLibrary.V1
                 options.SwaggerEndpoint("../swagger/v1/swagger.json", apiName);
             });
             app.UseConventionalMiddleware();
-            //app.UseMvc(routes =>
-            //{
-            //    // SwaggerGen won't find controllers that are routed via this technique.
-            //    routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
-            //});
-            //app.UseCors("fiver");
+            app.UseMvc(routes =>
+            {
+                // SwaggerGen won't find controllers that are routed via this technique.
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
+            app.UseCors("fiver");
         }
 
     }

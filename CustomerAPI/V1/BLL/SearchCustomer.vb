@@ -601,7 +601,7 @@ Public Class SearchCustomer
             Next
             Dim cp As String = System.IO.Path.GetTempPath()
 
-            Dim sql As String = "select pledge_photo from customer_photo where cust_id='" & str & "'"
+            Dim sql As String = "select pledge_photo from aml_gloan.customer_photo where cust_id='" & str & "'"
             Dim dt As New Data.DataTable
             Dim ws As New customerService.customer(set_ip)
             dt = ws.QueryResult(sql).Tables(0)
@@ -3421,67 +3421,67 @@ SCAN_ADDRESS:
                                         '    obj.UpdateKYCInfo("UPDADDPROOFID", resultArr(2), "", "", User_id)
                                         'End If
 
-                                        End If
-                                        MsgBox(resultArr(0))
-                                        kycPhoto = Nothing
-                                        cust = Nothing
-                                        Me.txtCustId.Text = resultArr(2)
-                                        txt_pan_custname.Text = txtACustName.Text
-                                        obj.Matching_ExtCust_KycVerify(resultArr(2), UUID, rrn_n)
+                                    End If
+                                    MsgBox(resultArr(0))
+                                    kycPhoto = Nothing
+                                    cust = Nothing
+                                    Me.txtCustId.Text = resultArr(2)
+                                    txt_pan_custname.Text = txtACustName.Text
+                                    obj.Matching_ExtCust_KycVerify(resultArr(2), UUID, rrn_n)
 
-                                        If Me.txtCustId.Text.Trim().Length = 14 Then
-                                            SaveCustomerMobOTPDetails(Me.txtCustId.Text, MobileOTP.strMobileNumOTP, MobileOTP.strOTPValue)
-                                            SaveCustomerRefDetails(Me.txtCustId.Text)
-                                            '****************************** Welcome Call Start****************************
-                                            ' '' '' '' '' '' '' ''Dim url As String = "http://api.dialstreet.com/v1/?api_key=Adc367ae31c20af9d5cdeaf7e291767a6&method=dial.click2call&output=xml&caller=" & txtMobileNo.Text & "&receiver=ivr:6323&delay=1800"
-                                            ' '' '' '' '' '' '' ''Dim wrGETURL As WebRequest
-                                            ' '' '' '' '' '' '' ''wrGETURL = WebRequest.Create(url)
-                                            ' '' '' '' '' '' '' ''Dim objStream As Stream
-                                            ' '' '' '' '' '' '' ''objStream = wrGETURL.GetResponse.GetResponseStream()
-                                            'Dim objReader As New StreamReader(objStream)
-                                            'Dim sLine As String = ""
-                                            'Dim i As Integer = 0
+                                    If Me.txtCustId.Text.Trim().Length = 14 Then
+                                        SaveCustomerMobOTPDetails(Me.txtCustId.Text, MobileOTP.strMobileNumOTP, MobileOTP.strOTPValue)
+                                        SaveCustomerRefDetails(Me.txtCustId.Text)
+                                        '****************************** Welcome Call Start****************************
+                                        ' '' '' '' '' '' '' ''Dim url As String = "http://api.dialstreet.com/v1/?api_key=Adc367ae31c20af9d5cdeaf7e291767a6&method=dial.click2call&output=xml&caller=" & txtMobileNo.Text & "&receiver=ivr:6323&delay=1800"
+                                        ' '' '' '' '' '' '' ''Dim wrGETURL As WebRequest
+                                        ' '' '' '' '' '' '' ''wrGETURL = WebRequest.Create(url)
+                                        ' '' '' '' '' '' '' ''Dim objStream As Stream
+                                        ' '' '' '' '' '' '' ''objStream = wrGETURL.GetResponse.GetResponseStream()
+                                        'Dim objReader As New StreamReader(objStream)
+                                        'Dim sLine As String = ""
+                                        'Dim i As Integer = 0
 
-                                            'Do While Not sLine Is Nothing
-                                            '    i += 1
-                                            '    sLine = objReader.ReadLine
-                                            '    If Not sLine Is Nothing Then
-                                            '        ' Console.WriteLine("{0}:{1}", i, sLine)
-                                            '    End If
-                                            'Loop
-                                            '****************************** Welcome Call End****************************
-                                            If intCustType = 1 Then
-                                                Customer_CheckforEmpRef()
-                                            End If
-                                        End If
-                                        'customer insert in ekyc module code dwtails
-                                        CuName = txtACustName.Text
-                                        FaName = txtAFatHus.Text
-                                        clear_confirm()
-                                        confstr = ""
-                                        'MsgBox(isactive)
-                                        If isactive = 8 Then
-                                            ' MsgBox(isactive)
-                                            CkycFlag = 1
-                                            Me.Main_tab.SelectedIndex = 3
-                                            'Me.Main_tab.SelectedTab = Me.TabCustDtl
-                                        End If
-                                        'Dim TransId As Integer
-                                        'Dim transdt As New DataTable
-                                        'If share = "T" Then
-                                        '    transdt = obj.QueryResult("select count(*) from transaction_detail where ref_id='" & resultArr(2) & "' and firm_id=2 and branch_id=" & BranchID & "").Tables(0)
-                                        '    If transdt.Rows(0)(0) > 0 Then
-                                        '        transdt = obj.QueryResult("select distinct trans_id from transaction_detail where ref_id='" & resultArr(2) & "' and firm_id=2 and branch_id=" & BranchID & "").Tables(0)
-                                        '        TransId = transdt.Rows(0)(0)
-                                        '        new_vcc(TransId, 2, BranchID)
+                                        'Do While Not sLine Is Nothing
+                                        '    i += 1
+                                        '    sLine = objReader.ReadLine
+                                        '    If Not sLine Is Nothing Then
+                                        '        ' Console.WriteLine("{0}:{1}", i, sLine)
                                         '    End If
-                                        'End If
+                                        'Loop
+                                        '****************************** Welcome Call End****************************
+                                        If intCustType = 1 Then
+                                            Customer_CheckforEmpRef()
+                                        End If
+                                    End If
+                                    'customer insert in ekyc module code dwtails
+                                    CuName = txtACustName.Text
+                                    FaName = txtAFatHus.Text
+                                    clear_confirm()
+                                    confstr = ""
+                                    'MsgBox(isactive)
+                                    If isactive = 8 Then
+                                        ' MsgBox(isactive)
+                                        CkycFlag = 1
+                                        Me.Main_tab.SelectedIndex = 3
+                                        'Me.Main_tab.SelectedTab = Me.TabCustDtl
+                                    End If
+                                    'Dim TransId As Integer
+                                    'Dim transdt As New DataTable
+                                    'If share = "T" Then
+                                    '    transdt = obj.QueryResult("select count(*) from transaction_detail where ref_id='" & resultArr(2) & "' and firm_id=2 and branch_id=" & BranchID & "").Tables(0)
+                                    '    If transdt.Rows(0)(0) > 0 Then
+                                    '        transdt = obj.QueryResult("select distinct trans_id from transaction_detail where ref_id='" & resultArr(2) & "' and firm_id=2 and branch_id=" & BranchID & "").Tables(0)
+                                    '        TransId = transdt.Rows(0)(0)
+                                    '        new_vcc(TransId, 2, BranchID)
+                                    '    End If
+                                    'End If
                                 Else
 
-                                        MsgBox(resultArr(0))
-                                        txt_pan_custname.Text = txtACustName.Text
-                                        clear_confirm()
-                                        confstr = ""
+                                    MsgBox(resultArr(0))
+                                    txt_pan_custname.Text = txtACustName.Text
+                                    clear_confirm()
+                                    confstr = ""
                                 End If
 
                             Else
@@ -5708,7 +5708,7 @@ SCAN_ADDRESS:
 
     Private Function LoadKYCPhoto(ByVal custid As String)
         Try
-            Dim sql As String = "select kyc_photo from customer_photo where cust_id='" & custid & "'"
+            Dim sql As String = "select kyc_photo from aml_gloan.customer_photo where cust_id='" & custid & "'"
             Dim ds As New Data.DataSet
             Dim ws As New customerService.customer(set_ip)
             ws.Timeout = 3 * 1000 * 60

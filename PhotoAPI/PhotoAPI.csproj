@@ -27,7 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\APIBaseClassLibrary\APIBaseClassLibrary.csproj" />
     <ProjectReference Include="..\DataAccessLibrary\DataAccessLibrary.csproj" />
-    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+    <ProjectReference Include="..\Utilities\UtilitiesNew.csproj" />
   </ItemGroup>
 
 </Project>

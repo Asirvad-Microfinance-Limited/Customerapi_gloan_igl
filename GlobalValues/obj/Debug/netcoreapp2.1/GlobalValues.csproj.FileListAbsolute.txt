@@ -12,3 +12,17 @@ E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\Globa
 E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csproj.CopyComplete
 E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.dll
 E:\TFS\Asirvad_GL\CustomerAPISolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.deps.json
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.runtimeconfig.json
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.runtimeconfig.dev.json
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\GlobalValues.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\DataAccessLibrary.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\bin\Debug\netcoreapp2.1\DataAccessLibrary.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csprojAssemblyReference.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csproj.CoreCompileInputs.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.AssemblyInfoInputs.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.AssemblyInfo.cs
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.csproj.CopyComplete
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\GlobalValues\obj\Debug\netcoreapp2.1\GlobalValues.pdb

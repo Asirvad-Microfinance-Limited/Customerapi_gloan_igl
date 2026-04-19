@@ -45,11 +45,11 @@ namespace KYCAPI.V1.BLL
                 //System.Drawing.Image img = Base64ToImage(request.kycPhoto);
                 //byte[] imageBytes = ImageToByteArray(img);
                 byte[] imageBytes = Convert.FromBase64String(request.kycPhoto);
-                ods = helper.ExecuteDataSet("select count(*) from customer_photo where cust_id='" + request.custID + "' and kyc_photo is null ");
+                ods = helper.ExecuteDataSet("select count(*) from aml_gloan.customer_photo where cust_id='" + request.custID + "' and kyc_photo is null ");
                 if (Convert.ToInt32(ods.Tables[0].Rows[0][0]) > 0)
                 {
-                    // helper.ExecuteNonQuery("insert into  customer_photo_his select t.*,sysdate from customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
-                    string sql1 = "update customer_photo set kyc_photo=:ph where cust_id='" + request.custID + "'";
+                    // helper.ExecuteNonQuery("insert into  aml_gloan.customer_photo_his select t.*,sysdate from aml_gloan.customer_photo t where cust_id='" + addPhotoRequest.custId + "'");
+                    string sql1 = "update aml_gloan.customer_photo set kyc_photo=:ph where cust_id='" + request.custID + "'";
                     OracleParameter[] parm1 = new OracleParameter[1];
                     parm1[0] = new OracleParameter();
                     parm1[0].ParameterName = "ph";
@@ -173,7 +173,7 @@ namespace KYCAPI.V1.BLL
 
             //DBAccessHelper helper = new DBAccessHelper();
                 DataTable dt = new DataTable();
-                dt = helper.ExecuteDataSet("select kyc_photo from customer_photo where cust_id='" + request.custId + "'").Tables[0];
+                dt = helper.ExecuteDataSet("select kyc_photo from aml_gloan.customer_photo where cust_id='" + request.custId + "'").Tables[0];
                 if ((dt != null) &&(dt.Rows.Count > 0))
                 {
                     byte[] imagebyte = (byte[])dt.Rows[0][0];

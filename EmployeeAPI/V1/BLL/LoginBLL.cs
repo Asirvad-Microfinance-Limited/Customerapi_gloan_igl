@@ -182,7 +182,7 @@ namespace Employee.V1.BLL
 
                                             int checkToken = 0;
                                             DataTable dt = new DataTable();
-                                            string checkTokenQuery = "select count(*)  from LOGIN_TOKEN_HANDLER t  where t.emp_code =  " + request.employeeID + " and t.login_branch_id =  " + request.branchID + " and t.status = 1 and endtime <= sysdate";
+                                            string checkTokenQuery = "select count(*)  from .LOGIN_TOKEN_HANDLER t  where t.emp_code =  " + request.employeeID + " and t.login_branch_id =  " + request.branchID + " and t.status = 1 and endtime <= sysdate";
                                             dt = helper.ExecuteDataSet(checkTokenQuery).Tables[0];
                                             checkToken = Convert.ToInt32(dt.Rows[0][0]);
                                             if (checkToken == 1)
@@ -191,7 +191,7 @@ namespace Employee.V1.BLL
                                             }
                                             else
                                             {
-                                                string TokenQuery = "select t.token  from LOGIN_TOKEN_HANDLER t  where t.emp_code = " + request.employeeID + " and t.login_branch_id =  " + request.branchID + "  and t.status = 1";
+                                                string TokenQuery = "select t.token  from .LOGIN_TOKEN_HANDLER t  where t.emp_code = " + request.employeeID + " and t.login_branch_id =  " + request.branchID + "  and t.status = 1";
                                                 dt = helper.ExecuteDataSet(TokenQuery).Tables[0];
                                                     response.token = dt.Rows[0][0].ToString();
                                             }

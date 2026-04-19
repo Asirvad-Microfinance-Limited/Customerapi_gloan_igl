@@ -1,0 +1,9 @@
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\bin\Debug\netcoreapp2.1\UtilitiesNew.deps.json
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\bin\Debug\netcoreapp2.1\UtilitiesNew.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\bin\Debug\netcoreapp2.1\UtilitiesNew.pdb
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\obj\Debug\netcoreapp2.1\UtilitiesNew.csprojAssemblyReference.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\obj\Debug\netcoreapp2.1\UtilitiesNew.csproj.CoreCompileInputs.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\obj\Debug\netcoreapp2.1\UtilitiesNew.AssemblyInfoInputs.cache
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\obj\Debug\netcoreapp2.1\UtilitiesNew.AssemblyInfo.cs
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\obj\Debug\netcoreapp2.1\UtilitiesNew.dll
+D:\11-Apr-2026\IGL\1\Customer_api\customerapisolution\Utilities\obj\Debug\netcoreapp2.1\UtilitiesNew.pdb

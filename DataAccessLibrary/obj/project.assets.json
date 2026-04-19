@@ -1888,25 +1888,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\100613\\.nuget\\packages\\": {},
+    "C:\\Users\\100713\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TFS\\Asirvad_GL\\CustomerAPISolution\\DataAccessLibrary\\DataAccessLibrary.csproj",
+      "projectUniqueName": "D:\\11-Apr-2026\\IGL\\1\\Customer_api\\customerapisolution\\DataAccessLibrary\\DataAccessLibrary.csproj",
       "projectName": "DataAccessLibrary",
-      "projectPath": "E:\\TFS\\Asirvad_GL\\CustomerAPISolution\\DataAccessLibrary\\DataAccessLibrary.csproj",
-      "packagesPath": "C:\\Users\\100613\\.nuget\\packages\\",
-      "outputPath": "E:\\TFS\\Asirvad_GL\\CustomerAPISolution\\DataAccessLibrary\\obj\\",
+      "projectPath": "D:\\11-Apr-2026\\IGL\\1\\Customer_api\\customerapisolution\\DataAccessLibrary\\DataAccessLibrary.csproj",
+      "packagesPath": "C:\\Users\\100713\\.nuget\\packages\\",
+      "outputPath": "D:\\11-Apr-2026\\IGL\\1\\Customer_api\\customerapisolution\\DataAccessLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\100613\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\100713\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
