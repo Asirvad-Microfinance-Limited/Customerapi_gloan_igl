@@ -164,7 +164,7 @@ namespace Employee.V1.BLL
                                     parm_coll[20] = new OracleParameter("error_status", OracleDbType.Decimal,100);
                                     parm_coll[20].Direction = ParameterDirection.Output;
                                     var strr6 = logClass.writeLog("Start proc_ValidateEmployee , Password:"+ hashedDataBytes);
-                                    helper.ExecuteNonQuery("proc_ValidateEmployee", parm_coll);
+                                    helper.ExecuteNonQuery("aml_gloan.proc_ValidateEmployee", parm_coll);
                                     var strr7 = logClass.writeLog("End proc_ValidateEmployee"+ Convert.ToInt64(parm_coll[20].Value.ToString()));
                                     if ((Convert.ToInt64(parm_coll[20].Value.ToString()) == Constants.LoginFlags.Flag_Success))
                                     {
@@ -182,7 +182,7 @@ namespace Employee.V1.BLL
 
                                             int checkToken = 0;
                                             DataTable dt = new DataTable();
-                                            string checkTokenQuery = "select count(*)  from .LOGIN_TOKEN_HANDLER t  where t.emp_code =  " + request.employeeID + " and t.login_branch_id =  " + request.branchID + " and t.status = 1 and endtime <= sysdate";
+                                            string checkTokenQuery = "select count(*)  from aml_gloan.LOGIN_TOKEN_HANDLER t  where t.emp_code =  " + request.employeeID + " and t.login_branch_id =  " + request.branchID + " and t.status = 1 and endtime <= sysdate";
                                             dt = helper.ExecuteDataSet(checkTokenQuery).Tables[0];
                                             checkToken = Convert.ToInt32(dt.Rows[0][0]);
                                             if (checkToken == 1)
@@ -191,7 +191,7 @@ namespace Employee.V1.BLL
                                             }
                                             else
                                             {
-                                                string TokenQuery = "select t.token  from .LOGIN_TOKEN_HANDLER t  where t.emp_code = " + request.employeeID + " and t.login_branch_id =  " + request.branchID + "  and t.status = 1";
+                                                string TokenQuery = "select t.token  from aml_gloan.LOGIN_TOKEN_HANDLER t  where t.emp_code = " + request.employeeID + " and t.login_branch_id =  " + request.branchID + "  and t.status = 1";
                                                 dt = helper.ExecuteDataSet(TokenQuery).Tables[0];
                                                     response.token = dt.Rows[0][0].ToString();
                                             }
